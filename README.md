@@ -2,6 +2,16 @@
 
 This repository contains code to reproduce [langchain4j/langchain4j#2209](https://github.com/langchain4j/langchain4j/issues/2209).
 
+The issue is introduced when adding the langchain4j-document-parser-apache-tika dependency to the POM:
+
+```xml
+<dependency>
+    <groupId>dev.langchain4j</groupId>
+    <artifactId>langchain4j-document-parser-apache-tika</artifactId>
+    <version>${langchain4j.version}</version>
+</dependency>
+```
+
 ## Introduction
 
 This project uses Quarkus, the Supersonic Subatomic Java Framework.
